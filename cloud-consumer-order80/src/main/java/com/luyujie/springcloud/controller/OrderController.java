@@ -14,7 +14,7 @@ public class OrderController {
     @Autowired
     private RestTemplate restTemplate;
 
-    public static final String PAYMENT_URL = "http://localhost:8001";
+    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 
     @PostMapping("/save")
     public ResponseEntity<CommonResult> save(@RequestBody Payment payment){
