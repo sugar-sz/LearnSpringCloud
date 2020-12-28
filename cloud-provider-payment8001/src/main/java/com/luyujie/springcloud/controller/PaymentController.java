@@ -30,4 +30,9 @@ public class PaymentController {
     public String getPaymentLB(){
         return serverPort;
     }
+
+    @GetMapping("/admin/get/{id}")
+    public String getTest(@PathVariable Long id){
+        return id + serverPort;
+    }
 }
