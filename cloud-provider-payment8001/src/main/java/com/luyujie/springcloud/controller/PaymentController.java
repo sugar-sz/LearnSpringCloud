@@ -35,4 +35,9 @@ public class PaymentController {
     public String getTest(@PathVariable Long id){
         return id + serverPort;
     }
+
+    @GetMapping("/zipkin")
+    public String paymentZipkin(){
+        return "我是zipkin8001";
+    }
 }
